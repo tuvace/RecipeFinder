@@ -1,0 +1,70 @@
+.recipe {
+    background: white;
+    border: 1px solid #eaeaea;
+    padding: 2em 4em;
+    width: 30%;
+    margin-bottom: 2em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.recipe a {
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    color: #121212;
+}
+
+.recipe a:hover {
+    color: darkorchid;
+    -webkit-transition: 250ms ease-in-out;
+    transition: 250ms ease-in-out;
+}
+
+.recipe a h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.recipe small {
+    text-align: center;
+    color: #868686;
+}
+
+.recipe__image {
+    -ms-grid-column-align: center;
+    justify-self: center;
+    width: 100%;
+    height: auto;
+}
+
+.active {
+    opacity: 1;
+    -webkit-transition: opacity 120ms ease-in;
+    transition: opacity 120ms ease-in;
+}
+
+@media screen and (max-width: 900px) {
+    .recipe {
+        width: 50%;
+    }
+    .recipe__image {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .recipe {
+        width: 80%;
+    }
+    .recipe__image {
+        width: 100%;
+        height: auto;
+    }
+}
